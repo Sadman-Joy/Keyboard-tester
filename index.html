@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard Tester</title>
+  </head>
+  <body>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      #app {
+        text-align: center;
+        font-size: larger;
+      }
+
+      #keyDisplay {
+        margin-top: 20px;
+        font-size: 25px;
+        border: 2px solid #ccc;
+        padding: 10px;
+        width: 200px;
+        margin: 0 auto;
+      }
+    </style>
+
+    <div id="app">
+      Press any key to test your keyboard:
+      <br /><br />
+      <div id="keyDisplay"></div>
+      <!-- Add the audio element -->
+      <audio id="keySound" src="media/click.mp3" preload="auto"></audio>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
